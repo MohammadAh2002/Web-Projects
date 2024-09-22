@@ -1,5 +1,5 @@
-# Product Card Challenge
-Design a Simple Product Card.
+# Code Magazine Challenge
+Design a Simple Magazine.
 
 ## Files Included
 - `index.html`: The main HTML file for the project.
