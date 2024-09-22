@@ -1,0 +1,206 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    
+    font-family: sans-serif;
+    line-height: 1.5;
+
+}
+
+.Main{
+
+    border: solid 4px black;
+
+    width: 825px;
+    margin: 20px auto;
+
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 250px repeat(2, 1fr);
+
+
+}
+.Main::before{
+
+    content: "Sale";
+    position: absolute;
+
+    color: white;
+    background-color: rgb(200, 54, 54);
+    text-align: center;
+    font-style: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    padding: 5px 15px;
+
+    left: -15px;
+    top:-15px;
+}
+
+header{
+
+grid-column: 1 / -1;
+grid-row: 1;
+
+}
+
+header h2{
+
+background-color: #d7d4d4;
+
+text-align: center;
+text-transform: uppercase;
+font-size: 22px;
+padding: 15px;
+
+}
+
+section{
+
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    grid-column: 1 / -1;
+    grid-row: 2;
+
+}
+
+
+.Price-And-Shipping{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.Product-Info{
+
+    flex: 1;
+    padding-top: 20px;
+
+}
+.Price{
+
+    font-size: 20px;
+
+}
+.Shipping{
+
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #b3b1b1;
+    font-weight: bold;
+
+}
+.Product-Description{
+
+margin-bottom: 10px;
+}
+
+a:link, a:visited{
+
+    color: black;
+
+}
+a:hover, a:active{
+
+    text-decoration: none;
+
+}
+
+.Product-Details{
+
+
+    flex: 1;
+
+    padding-top: 20px;
+}
+ul{
+
+    list-style: square;
+
+    margin-left: 20px;
+
+}
+.Details-Title{
+
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+button{
+
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+
+    border-top: solid 4px black;
+
+    grid-column: 1 / -1;
+    grid-row: 3;
+
+}
+button:hover{
+
+    color: black;
+    background-color: white;
+
+}
+
+.Colors{
+
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    gap: 10px
+}
+.Colors > *{
+
+    width: 20px;
+    height: 20px;
+
+}
+.Color1{
+
+    background-color: black;
+
+}
+.Color2{
+
+    background-color: red;
+
+}
+.Color3{
+
+    background-color: green;
+
+}
+.Color4{
+
+    background-color: blue;
+
+}
+.Color5{
+
+    background-color: brown;
+
+}
+.Color6{
+
+    background-color: yellow;
+
+}

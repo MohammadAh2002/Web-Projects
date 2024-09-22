@@ -1,10 +1,9 @@
-# Carousel Component Challenge
-Design a Carousel Component.
+# Simple Flex-Grid Layout
+Design a Simple Flex-Grid Layout.
 
 ## Files Included
 - `index.html`: The main HTML file for the project.
 - `styles.css`: The stylesheet for the project.
-- `Content`: Content for the Design.
 
 ## How to Run
 1. Locate the index.html file in your project folder.

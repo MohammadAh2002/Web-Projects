@@ -1,5 +1,5 @@
-# Carousel Component Challenge
-Design a Carousel Component.
+# Hero Section Challenge
+Design a Hero Section.
 
 ## Files Included
 - `index.html`: The main HTML file for the project.

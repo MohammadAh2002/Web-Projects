@@ -1,0 +1,92 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #343a40;
+    font-size: 24px ;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+
+    height: 100vh;
+    
+    display: grid;
+    grid-template-columns: auto 2fr 4fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+nav{
+    background-color: #343a40;
+
+    color: white;
+
+    grid-column: 1;
+    grid-row: 1 / -1;
+
+    padding: 20px;
+}
+menu{
+    background-color: #7048e8;
+    grid-column: 2 / -1;
+    grid-row: 1;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+button{
+
+    background-color: #5f3dc4;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+button:last-child{
+
+    margin-left: auto;
+    background-color: #d6336c;
+
+}
+section{
+    background-color: #e9ecfe;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    overflow: scroll;
+}
+section > *{
+
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+
+    /* padding: 40px; */
+
+    height: 96px;
+    background-color: #adb5bd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;flex-shrink: 0;
+
+}
+main{
+    padding: 10px;
+}
+aside{
+    background-color: #e9ecfe;
+    padding: 10px;
+}

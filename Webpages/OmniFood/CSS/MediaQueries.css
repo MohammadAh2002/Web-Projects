@@ -1,0 +1,257 @@
+@media (max-width: 84em){ 
+    .Hero{
+        max-width: 120rem;
+    }
+    .Primary-Header{
+        font-size: 4.4rem;
+    }
+
+    .Gallery{
+        grid-template-columns: repeat(2, 1fr);   
+    }
+}
+
+@media (max-width: 75em){ 
+
+    html{
+        font-size: 56.25%;
+        }
+
+        .Grid{
+            column-gap: 4.8rem;
+            row-gap: 6.4rem;
+
+        }
+
+        [class ~= "SubHeader"] {
+            font-size: 3.6rem;
+        }
+
+        .Step-Title,
+        .Diet-Title{
+            font-size: 2.4rem;
+        }
+
+        .header{
+            padding: 0 3.2rem;
+        }
+
+        .Hero{
+            gap: 4.8rem;
+        }
+
+        .Header-Nav ul{
+            gap: 3.2rem;
+        }
+
+        .Testimonials-container{
+            padding: 9.6rem 3.2rem;
+        }
+}
+
+@media (max-width: 59em){ 
+
+    html{
+        font-size: 50%;
+    }
+
+    .Hero{
+        grid-template-columns: 1fr;
+        padding: 0 8rem;
+        gap: 6.4rem;
+    }
+    .Hero-Image{
+
+        width: 60%;
+
+    }
+
+    .Hero-Text,
+    .Hero-Image-box{
+
+        text-align: center;
+    }
+    .delivered-Meals{
+        justify-content: center;
+        margin-top: 3.2rem;
+    }
+    .Featured-In-Logos img{
+        height: 2.4rem;
+    }
+    .Step-Number{
+        font-size: 7.4rem;
+    }
+    .Meal-Content{
+        padding: 2.4rem 3.2rem;
+    }
+
+    .section-Testimonials{
+        grid-template-columns: 1fr;
+    }
+    .Gallery{
+        grid-template-columns: repeat(6, 1fr);   
+    }
+    .Testimonials-container {
+        padding: 2.4rem 3.2rem;
+    }
+    .Testimonials-Header{
+        margin-bottom: 6.2rem;
+    }
+    .Cta{
+        grid-template-columns: 3fr 2fr;
+    }
+    .Cta form{
+        grid-template-columns: 1fr;
+    }
+    .Cta-Main-Box{
+        padding:4.8rem 6.4rem;  
+    }
+    .Form-Button{
+        margin-top: 1.2rem;
+    }
+    .Mobile-Nav-Button{
+        display: block;
+        z-index: 999;
+
+    }
+    .Header-Nav{
+        background-color: rgba(255, 255, 255, 0.97);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-in;
+
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+    .Header-Nav ul{
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+    .Nav-Link:link,
+    .Nav-Link:visited{
+        font-size: 3rem;
+    }
+    .Nav-Open .Header-Nav{
+
+        opacity: 1;
+        pointer-events: auto;
+        visibility:visible;
+
+        transform: translateX(0%);
+
+    }
+    .Nav-Open .Mobile-Nav-Button-Icon[name = "close-outline"]{
+        display: block;
+    }
+    .Nav-Open .Mobile-Nav-Button-Icon[name = "menu-outline"]{
+        display: none;
+    }
+}
+
+
+@media (max-width: 44em){ 
+
+    .Grid3Colmns,
+    .Grid4Colmns{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .Diet-Card{
+        grid-column: 1 / -1;
+        justify-self: center;
+        margin-bottom: 4.8rem;
+    }
+
+    .Testimonials-Header,
+    .Meals-Header,
+    .Pricing-Header{
+        font-size: 3.6rem;
+    }
+
+    .Pricing-Plan{
+        width: 100%;
+    }
+
+    .footer-Grid{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .Account,
+    .Company,
+    .Resources {
+        grid-row: 2;
+        grid-column: span 2;
+    }
+    .Logos, .Contact-us {
+        grid-column: span 3;
+    }
+}
+
+@media (max-width:  34em){
+
+    .Grid{
+        row-gap: 4.8rem;
+    }
+    .Grid2Colmns,
+    .Grid3Colmns,
+    .Grid4Colmns{
+        grid-template-columns: 1fr;
+    }
+
+    .Featured-In-Logos img {
+        height: 1.2rem;
+    }
+
+    .section-HIW{
+        padding: 3.2rem 0;
+    }
+    .HIW-Header{
+        margin-bottom: 6.4rem;
+    }
+
+    .section-Hero{
+
+        padding: 2.4rem 0 4.8rem;
+    }
+    .Hero{
+
+        padding: 0 3.2rem;
+    
+    }
+    .Hero-Image{
+        width: 80%;
+    }
+    .btn, .btn:link, .btn:visited{
+        padding: 2.4rem 1.6rem;
+    }
+    .step-image-box:nth-child(2){
+        grid-row: 1;
+    }
+    .Step {
+        margin-bottom: 3.2rem;
+    }
+    .Testimonials{
+        grid-template-columns: 1fr;
+    }
+    .Gallery{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.2rem;
+    }
+    .Cta{
+        grid-template-columns: 1fr;
+        grid-row: 2;
+    }
+    .cta-Image{
+        height: 32rem;
+        grid-row: 1;
+    }
+
+}

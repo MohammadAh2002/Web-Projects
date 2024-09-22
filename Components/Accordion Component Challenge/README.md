@@ -1,6 +1,5 @@
 # Accordion Component Challenge
-
-Design a Simple Accordion Component 
+Design a Accordion Component.
 
 ## Files Included
 - `index.html`: The main HTML file for the project.

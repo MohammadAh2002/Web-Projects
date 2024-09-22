@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+
+    color: #343a40;
+    line-height: 1;
+}
+
+.Pagination{
+    margin: 300px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+a:link, a:visited{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #343a40;
+    text-decoration: none;
+    font-size: 18px;
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+
+
+}
+a:hover, a:active{
+
+    background-color: #087f5b;
+    color: white;
+} 
+span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+
+}
+span:hover{
+
+    background-color: #087f5b;
+    color: white;
+
+}
+
+button{
+    background: none;
+
+    width: 48px;
+    height: 48px;
+
+    border: solid 1px #087f5b;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button:hover{
+
+    background-color: #087f5b ;
+}
+button:hover .Button-Icon{
+    stroke: white;
+}
+.Button-Icon{
+    width: 24px;
+    height: 24px;
+    stroke: #087f5b;
+}

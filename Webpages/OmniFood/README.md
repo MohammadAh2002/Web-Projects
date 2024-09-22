@@ -1,9 +1,10 @@
-# Carousel Component Challenge
-Design a Carousel Component.
+# OmniFood Webpage
+Design a Webpage for OmniFood.
 
 ## Files Included
 - `index.html`: The main HTML file for the project.
-- `styles.css`: The stylesheet for the project.
+- `CSS`: Folder containing the The stylesheets for the project.
+- `JS`: Folder containing the JavaScript files.
 - `Content`: Content for the Design.
 
 ## How to Run

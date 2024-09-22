@@ -1,5 +1,5 @@
-# Carousel Component Challenge
-Design a Carousel Component.
+# chairs Shop Webpage
+Design a Small Webpage for a chairs Shop.
 
 ## Files Included
 - `index.html`: The main HTML file for the project.

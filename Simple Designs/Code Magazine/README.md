@@ -1,8 +1,9 @@
-# Carousel Component Challenge
-Design a Carousel Component.
+# Product Card Challenge
+Design a Simple Product Card.
 
 ## Files Included
 - `index.html`: The main HTML file for the project.
+- `Blog - flexbox - css-grid`: The Helper HTML files for the project.
 - `styles.css`: The stylesheet for the project.
 - `Content`: Content for the Design.
 
