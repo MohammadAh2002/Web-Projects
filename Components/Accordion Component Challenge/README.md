@@ -7,6 +7,6 @@ Design a Simple Accordion Component
 - `styles.css`: The stylesheet for the project.
 
 ## How to Run
-1- Locate the index.html file in your project folder.
-2- Right-click on the index.html file and choose "Open with" to select your preferred web browser (e.g., Chrome, Firefox).
+1. Locate the index.html file in your project folder.
+2. Right-click on the index.html file and choose "Open with" to select your preferred web browser (e.g., Chrome, Firefox).
 
