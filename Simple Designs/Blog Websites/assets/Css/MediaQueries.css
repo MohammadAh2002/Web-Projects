@@ -1,0 +1,52 @@
+@media (max-width: 59em){ 
+
+    .header-link{
+        font-size: 3rem;
+    }
+
+    .Page-Main-Header{
+        font-size: 3rem;
+    }
+
+    .header-icon{
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+@media (max-width: 44em){ 
+    
+    .header-link{
+        font-size: 2.5rem;
+    }
+
+    .Page-Main-Header{
+        font-size: 2.5rem;
+    }
+
+    .header-icon{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .articals-section{
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(4,auto);
+    }
+    
+    
+    .Auther-Description p,
+    .Auther-Description span{
+        font-size: 0.5rem;
+    }
+
+
+}
+
+@media (max-width:  34em){
+
+    .nav-link{
+        font-size: 1.5rem;
+    }
+
+}

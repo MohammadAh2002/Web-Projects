@@ -1,0 +1,70 @@
+.artical-header,
+.artical-body{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.artical-header-text{
+    font-size: 3rem;
+}
+
+.auther-info{
+    display: flex;
+    align-items: center;
+    gap: 3rem
+}
+
+.profile-link{
+    text-decoration: none;
+}
+
+.auther-text{
+    font-size: 2rem;
+}
+
+.artical-body{
+    font-size: 2.4rem;
+}
+.auther-image{
+    width: 8rem; 
+    height: 8rem; 
+}
+
+.other-articals{
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+.list-item{
+    display: flex;
+    align-items: center;
+    gap:1.5rem
+}
+
+main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 3rem
+}
+
+aside{
+    align-self: start;
+    justify-self: center;
+    padding: 1rem;
+}
+
+.Auther-Description p,
+.Auther-Description span{
+    font-size: 2rem;
+}
+
+.Auther-Platforms a,
+.Auther-Platforms span{
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.Like-Botton{
+    font-size: 3rem;
+}

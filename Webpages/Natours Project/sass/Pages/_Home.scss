@@ -1,0 +1,234 @@
+.Section-About{
+    background-color: $color-Light-Gray-1;
+    padding: 25rem 0;
+    margin-top: -20vh;
+
+    .About-Main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        
+        max-width: $grid-width;
+        margin: 0 auto;
+        
+
+        .Text-Box{
+            grid-column: 1 / 1;
+            margin-bottom: 3rem;
+        }
+        .Images-Box{
+            grid-column: 2 / -1;
+            position: relative;
+
+            @include Respond(Tab-Port){
+                grid-column: 1 / 1;
+
+            }
+
+            .About-Photo{
+                width: 55%;
+                box-shadow: 0 1.5rem 4rem rgba($color-Black,0.4);
+                border-radius: 0.2rem;
+                position: absolute;
+
+                outline-offset: 2rem ;
+                transition: all 0.2s;
+                &:hover{
+                    outline: 1.5rem solid $color-primary;
+                    transform: scale(1.05) translateY(-0.5rem);
+                    box-shadow: 0 2.5rem 4rem rgba($color-Black,0.5);
+                    z-index: 99;
+                }
+            }
+            .Photo{
+
+                &-1{
+                    left: 0;
+                    top: -2rem;
+                }
+                &-2{
+                    right: 0;
+                    top: 2rem;  
+                }
+                &-3{                   
+                    left: 20%;
+                    top: 10rem;
+                }
+            }
+            &:hover .About-Photo:not(:hover){
+                transform: scale(0.95);
+            }
+        }
+
+        @include Respond(Tab-Port){
+            grid-template-columns: 1fr;
+            max-width: 50rem;
+
+            padding-bottom: 20rem;
+        }
+
+    }
+
+    @include Respond(Tab-Port){
+        padding: 20rem 0 25rem;
+    }
+}
+
+.Section-Features{
+
+    margin-top: -10rem;
+
+    padding: 20rem 0;
+
+    background-image:
+        linear-gradient(
+            to right bottom,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)),
+            url(../Content/Images/nat-4.jpg);
+    
+    background-size: cover;
+
+    transform: skewY(-7deg);
+
+    & > * {
+        transform: skewY(7deg);
+    }
+
+
+    .Features-Boxes{
+
+        width: 80%;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-around;
+        gap: 6rem;
+
+        @include Respond(Tab-Port){
+            flex-direction: column;
+            width: 45%;
+        }
+    }
+
+    @include Respond(Tab-Port){
+
+        padding: 10rem 0 10rem 0;
+
+    }
+}
+
+.Section-Tours{
+
+    margin-top: -10rem;
+    padding: 25rem 0 15rem 0;
+
+    background-color: $color-Light-Gray-1;
+
+    .Tours-Cards{
+        width: 80%;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 6rem;
+
+        @include Respond(Tab-Port){
+            grid-template-columns: auto;
+            width: 45%;
+        }
+
+        @include Respond(Phone){
+            width: 60%;
+        }
+    }
+
+}
+
+.Section-Stories{
+
+    position: relative;
+    padding: 15rem 0;
+
+    @include Respond(Tab-Port){
+
+        padding: 10rem 0;
+
+    }
+    
+}
+
+.Section-Booking{
+
+    padding: 15rem 0;
+
+    background-image:
+    linear-gradient(to right bottom,
+    $color-primary-light,
+    $color-primary-dark);
+
+    @include Respond(Tab-Port){
+
+        padding: 10rem 0;
+
+    }
+}
+
+.Book{
+
+    background-image:
+    linear-gradient(
+        105deg,
+        rgba($color-White, 0.9) 0%,
+        rgba($color-White, 0.9) 50%,
+        transparent 50%),
+        url(../Content/Images/nat-10.jpg);
+
+    background-size: 100%;
+
+    border-radius: 0.3rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-Black, 0.2);
+
+    width: 80%;
+    margin: 0 auto;
+
+    @include Respond(Tab-Land){
+
+        background-image:
+        linear-gradient(
+            105deg,
+            rgba($color-White, 0.9) 0%,
+            rgba($color-White, 0.9) 65%,
+            transparent 65%),
+            url(../Content/Images/nat-10.jpg);
+
+            background-size: cover;
+
+    }
+
+    &-Form{
+        width: 50%;
+        padding: 6rem;
+        
+        @include Respond(Tab-Land){
+            width: 65%;
+
+        }
+
+        @include Respond(Tab-Port){
+            width: 100%;
+
+        }
+    }
+
+    @include Respond(Tab-Port){
+
+        background-image:
+        linear-gradient(
+            to right,
+            rgba($color-White, 0.9) 0%,
+            rgba($color-White, 0.9) 100%),
+            url(../Content/Images/nat-10.jpg);
+
+    }
+}

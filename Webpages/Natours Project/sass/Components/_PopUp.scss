@@ -1,0 +1,132 @@
+.PopUp{
+
+    height: 100vh;
+    width: 100%;
+
+    background-color: rgba($color-Black, 0.8);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 9999;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 300ms;
+
+    &:target{
+        opacity: 1;
+        visibility: visible;
+    }
+    &-Close{
+        &:link,
+        &:visited{
+            display: inline-block;
+
+            color: $color-dark-Gray;
+            font-size: 3rem;
+            text-decoration: none;
+            line-height: 1;
+
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+
+            transition: all 200ms;
+        }
+
+        &:hover{
+            color: $color-primary;
+        }
+    }
+
+    &-Box{
+        width: 75%;
+
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(2, 1fr);
+
+        background-color: $color-White;
+
+        box-sizing:  0 2rem 4rem rgba($color-Black, 0.1);
+        border-radius: 0.3rem;
+        
+        overflow: hidden;
+
+        @include AbsCenter;
+
+        opacity: 0;
+
+        transition: all 500ms 200ms;
+        transform: translate(-50%, -50%) scale(0);
+
+        @include Respond(Phone){
+
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+
+    &-Images{
+
+        display: flex;
+        flex-direction: column;
+
+        grid-column: 1;
+        grid-row: 1 / -1;
+
+        @include Respond(Phone){
+            display: grid;
+            grid-template-columns: auto auto;
+            
+        }
+    }
+    &-Image{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &-Content{
+        grid-column: 2;
+        grid-row: 1 / -1;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        padding: 2rem 5rem;
+
+        p{
+            font-size: 1.4rem;
+            margin-bottom: 4rem;
+
+            column-count: 2;
+            column-gap: 4rem;
+            column-rule: 1px solid #eee;
+
+            hyphens: auto;
+
+            @include Respond(Phone){
+                column-count: 1;
+    
+            }
+            @include Respond(Tab-Port){
+                column-count: 1;
+    
+            }
+        }
+    }
+
+    &:target &-Box{
+
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+}

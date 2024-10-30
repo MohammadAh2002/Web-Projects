@@ -1,0 +1,14 @@
+@import url("../Css/Index.css");
+@import url("../Css/Artical.css");
+@import url("../Css/MediaQueries.css");
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; 
+}
+

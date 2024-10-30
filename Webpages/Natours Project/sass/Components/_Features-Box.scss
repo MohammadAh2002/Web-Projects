@@ -1,0 +1,35 @@
+.Features-Box{
+
+    background-color: rgba($color-White, 0.8);
+
+    font-size: 1.5rem;
+    text-align: center;
+
+    border-radius: 0.3rem;
+    box-shadow: 0 1.5rem 4rem  rgba($color-Black, 0.15);;
+
+    padding: 2.5rem;
+
+    @include Respond(Tab-Port){
+        padding: 2rem;
+    }
+
+    transition: all 300ms;
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+
+    }
+
+    &-Icon{
+        display: inline-block;
+
+        font-size: 6rem;
+        
+        margin-bottom: 0.5rem;
+
+        background-image:             
+        linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        background-clip: text;
+        color: transparent;
+    }
+}

@@ -1,0 +1,121 @@
+.Footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 3rem;
+    justify-content: center;
+    align-items: start;
+
+    padding: 10rem 0;
+
+    background-color: #333;
+
+    font-size: 1.4rem;
+
+    @include Respond(Tab-Port){
+        padding: 8rem 0;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        align-items: center;
+        gap: 0;
+    }
+
+    &-Logo-Box{
+        text-align: center;
+
+        grid-column: 1 / -1;
+
+        @include Respond(Tab-Port){
+            grid-row: 1;
+            grid-column: 1;
+        }
+    }
+    
+    &-Logo{
+        width: 30rem;
+        height: auto;
+
+    }
+
+    &-Nav{
+        grid-column: 1 / 2;
+        grid-row: 2;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        @include Respond(Tab-Port){
+
+
+            grid-row: 2;
+            grid-column: 1;
+        }
+    }
+
+    &-List{
+
+        border-top: 1px solid #777;
+        list-style: none;
+        padding-top: 1rem;
+        
+    }
+
+    &-Item{
+        display: inline-block;
+
+        &:not(:last-child){
+            margin-right: 1.5rem;
+        }
+
+    }
+
+    &-Link{
+
+        &:link,
+        &:visited{
+            text-decoration: none;
+            color: $color-Light-Gray-1;
+            text-transform: uppercase;
+
+            display: inline-block;
+
+            background-color: #333;
+
+            transition: all 200ms;
+        }
+
+        &:hover,
+        &:active{
+            color: $color-primary;
+            box-shadow: 0 1rem 2rem rgba($color-Black, 0.4);
+            transform: rotate(5deg) scale(1.3);
+        }
+    }
+
+    &-CopyRight{
+        grid-column: 2 / -1;
+        grid-row: 2;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        width: 85%;
+
+        &-Text{
+            display: inline-block;
+            border-top: 1px solid #777;
+            padding: 2rem;
+            color: $color-Light-Gray-1;
+        }
+
+        @include Respond(Tab-Port){
+            grid-row: 3;
+            grid-column: 1;
+            text-align: center;
+            justify-self: center;
+        }
+    }
+}

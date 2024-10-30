@@ -1,0 +1,171 @@
+/* 
+
+    Header
+
+*/
+.website-header{
+    width: 85%;   
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+.header-link{
+    font-size: 3rem;
+    color: gray;
+}
+
+.header-icon{
+    width: 4rem;
+    height: 4rem;
+}
+
+/* 
+
+    nav
+
+*/
+.website-nav{
+    margin: auto;
+    background-color: rgb(215, 213, 213);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-image{
+    width: 8rem;
+    height: 8rem;
+    margin-left: 4rem;
+}
+
+.nav-list{
+    list-style: none;
+    margin-right: 4rem;  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+.nav-link{
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000080;
+}
+
+/* 
+
+    articals
+
+*/
+.articals-section{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(3,auto);
+    gap: 5rem;
+    justify-content: center;
+}
+
+.artical-block{
+    padding: 1rem;
+    border: solid 0.3rem gray;
+}
+
+.artical-image{
+    display: inline-block;
+
+    width: 100%;
+    height: 30.5rem;
+}
+
+.artical-image-caption{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.artical-topic{
+    font-size: 2rem;
+    color: blue;
+    font-weight: 700;
+}
+
+.artical-title,
+.artical-description{
+    font-size: 2rem;
+}
+
+.separator{
+    font-size: 3rem;
+}
+
+.source-link,
+.website-link{
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.more-articals{
+    display: inline-block;
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+/*
+
+sub-form
+
+*/
+.sub-form{
+
+    width: 90%;
+    margin: 1.5rem auto;
+    padding: 2rem;
+
+    font-size: 2.5rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-label{
+display: block;
+}
+
+#email-input,
+#name-input{
+    font-size: 2.5rem;
+}
+
+.Subscribe-Button{
+    font-size: 2rem;
+    border: none;
+    padding: 3rem;
+    width: 30rem;
+
+    border-radius: 100px;
+}
+
+/*
+
+footer
+
+*/
+footer{
+    padding: 5rem;
+    margin: 2rem auto 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    border-top: 1px black solid;
+    background-color: rgb(151, 151, 151);
+}
