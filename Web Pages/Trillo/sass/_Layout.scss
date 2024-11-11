@@ -1,0 +1,106 @@
+.Main-Container{
+    max-width: 120rem;
+    margin: 10rem auto;
+
+    background-color: var(--Grey-light-1);
+
+    box-shadow: var(--shadow-Dark);
+
+    min-height: 80rem;
+
+    @media only screen and (max-width: $BP-Largest) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.Header{
+    font-size: 1.4rem;
+
+    height: 7rem;
+    
+    background-color: white;
+    
+    border-bottom: var(--Line);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: $BP-Smallest) {
+        flex-wrap: wrap;
+        height: 12rem;
+        align-content: space-around;
+    }
+}
+.Content{
+    display: flex;
+
+    @media only screen and (max-width: $BP-Medium) {
+        flex-direction: column;
+    }
+}
+
+.Sidebar{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 15%;
+
+    background-color: VAR(--Grey-dark-1);
+}
+
+.Main-Content{
+    flex-basis: 85%;
+}
+
+.Gallery{
+    display: flex;
+
+}
+
+.Details{
+    display: flex;
+    gap: 4.5rem;
+
+    padding: 4.5rem;
+
+    background-color: var(--Grey-light-1);
+
+    border-bottom: var(--Line);
+
+    font-size: 1.4rem;
+
+    @media only screen and (max-width: $BP-Medium) {
+        padding: 3rem;
+        gap: 3rem;
+    }
+
+    @media only screen and (max-width: $BP-Small) {
+        flex-direction: column;
+    }
+
+}
+
+.Description{
+    flex-basis: 60%;
+
+    background-color: white;
+    box-shadow:var(--shadow-light);
+
+    padding: 3rem;
+
+    @media only screen and (max-width: $BP-Medium) {
+        padding: 2rem;
+    }
+}
+
+.User-Reviews{
+    flex-basis: 40%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}

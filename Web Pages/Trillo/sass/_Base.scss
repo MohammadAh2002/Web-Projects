@@ -1,0 +1,58 @@
+$BP-Largest: 75em;
+$BP-Large: 68.75em;
+$BP-Medium: 56.25em;
+$BP-Small: 37.5em;
+$BP-Smallest: 31.25em;
+
+:root{
+    --Primary-Color: #eb2f64;
+    --Primary-Color-Light: #FF3366;
+    --Primary-Color-Dark: #BA265D;
+
+    --Grey-light-1: #faf9f9;
+    --Grey-light-2: #f4f2f2;
+    --Grey-light-3: #f0eeee;
+    --Grey-light-4: #ccc;
+
+    --Grey-dark-1: #333;
+    --Grey-dark-2: #777;
+    --Grey-dark-3: #999;
+
+    --shadow-Dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+    --shadow-light:  0 2rem 5rem rgba(0,0,0, 0.06);
+
+    --Line: 1px solid var(--Grey-light-2); 
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+    @media only screen and (max-width: $BP-Large) {
+        font-size: 50%;
+    }
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--Grey-dark-2);
+
+    background-image: linear-gradient(to right bottom, var(--Primary-Color-Light), var(--Primary-Color-Dark));
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
