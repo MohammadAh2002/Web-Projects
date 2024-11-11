@@ -15,7 +15,7 @@ in This Project you only Allowed to Use Flex Box, you are not Allowed to Use Gri
 2. Right-click on the index.html file and choose "Open with" to select your preferred web browser (e.g., Chrome, Firefox).
 
 ## How to Edit the Project
-1. Install Node.js and npm if you don't already have Them on Your Computer:
+1. Install Node.js and npm if you don't already have Them on Your Computer.
 2. Run the Folowing Command on the Project in the Terminal: `npm install sass --save-dev`.
 3. Edit the Sass Code.
 4. run the Folowing Command in Your Terminal: `npm run build:css`.
