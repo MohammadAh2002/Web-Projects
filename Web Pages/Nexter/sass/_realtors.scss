@@ -1,0 +1,48 @@
+.Realtors{
+    grid-area: Realtors;
+    background-color: $Color-Secondary;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+
+    padding: 3rem;
+
+    &-List{
+        display: grid;
+        grid-template-columns: min-content max-content;
+        column-gap: 2rem;
+        row-gap: 5vh;
+        align-items: center;
+    
+        @media only screen and (max-width: $BP-medium) {
+            grid-template-columns: repeat(3, min-content max-content);
+        }
+
+        @media only screen and (max-width: $BP-small) {
+            grid-template-columns: min-content max-content;
+        }
+
+    }
+
+}
+
+.Realtor{
+
+    &-Image{
+        width: 7rem;
+
+        border-radius: 50%;
+    }   
+
+    &-Details{
+        display: grid;
+        justify-items: start;
+
+        & span{
+            text-transform: uppercase;
+            color: $Light-grey-2;
+        }
+    }   
+}

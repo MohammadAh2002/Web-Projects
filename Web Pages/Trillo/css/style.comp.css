@@ -25,7 +25,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: var(--Grey-dark-2);
-  background-color: black;
+  background-image: linear-gradient(to right bottom, var(--Primary-Color-Light), var(--Primary-Color-Dark));
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh; }

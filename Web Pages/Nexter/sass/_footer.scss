@@ -1,0 +1,53 @@
+.Footer{
+    grid-area: Footer;
+
+    background-color: $Color-Secondary;
+
+    padding: 8rem;
+
+    &-List{
+        list-style: none;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 2rem;
+        align-items: center;
+
+        @media only screen and (max-width: $BP-medium) {
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        }
+
+    }
+
+    &-Link:link,
+    &-Link:visited{
+        font-size: 1.4rem;
+        color: #fff;
+        text-decoration: none;
+        font-family: $Font-Display;
+        text-transform: uppercase;
+        text-align: center;
+
+        padding: 1.5rem;
+        display: block;
+        
+        transition: all .2s;
+    }
+
+    &-Link:hover,
+    &-Link:active{
+        background-color: rgba(white, 0.5);
+        transform: translateY(-0.5rem);
+    }
+
+}
+
+.Copyright{
+    font-size: 1.4rem;
+    color: $Light-grey-2;
+    text-align: center;
+    
+    margin: 6rem auto 0;
+
+    width: 70%;
+}

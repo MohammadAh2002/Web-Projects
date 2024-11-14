@@ -1,0 +1,83 @@
+.Story{
+    grid-area: Story;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+    @media only screen and (max-width: $BP-small) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    &-Pictures{
+        display: grid;
+
+        position: relative;
+
+        background-image: linear-gradient(rgba($Color-Primary, 0.5), rgba($Color-Primary, 0.5)), url(../Content/img/back.jpg);
+        background-size: cover;
+
+        @media only screen and (max-width: $BP-small) {
+
+            padding: 4rem;
+
+        }
+
+    }
+
+    &-Image-1{
+        width: 65%;
+
+        align-self: center;
+        justify-self: center;
+
+        box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+
+        @media only screen and (max-width: $BP-small) {
+            justify-self: start;
+            width: 50%;
+        }
+
+    }
+
+    &-Image-2{
+        width: 55%;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+
+        @media only screen and (max-width: $BP-small) {
+            width: 45%;
+
+            left: 45%;
+            top: 25%;
+        }
+    }
+
+    &-Content{
+        display: grid;
+        align-content: center;
+        justify-items: start;
+
+        padding: 6rem 8vw;
+
+        background-color: $Light-grey-1;
+
+        @media only screen and (max-width: $BP-small) {
+            
+        }
+
+    }
+
+    &-Text{
+        font-size: 1.5rem;
+        font-style: italic;
+
+        margin-bottom: 4rem;
+    }
+
+}

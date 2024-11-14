@@ -1,0 +1,91 @@
+// COLOR VARIABLES
+$Color-Primary: #c69963;
+$Color-Primary-Dark: #B28451;
+
+$Color-Secondary: #101d2c;
+
+$Light-grey-1: #f9f7f6;
+$Light-grey-2: #aaa;
+
+$Dark-Grey-1: #54483A;
+$Dark-Grey-2: #6D5D4B;
+
+// FONT VARIABLES
+$Font-Primary: 'Nunito', sans-serif;
+$Font-Display: 'Josefin Sans', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$BP-largest: 75em;   // 1200px
+$BP-large: 62.5em;   // 1000px
+$BP-medium: 50em;    // 800px;
+$BP-small: 37.5em;    // 600px;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $BP-largest) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: $Font-Primary;
+    color: $Dark-Grey-2;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.Container{
+    display: grid;
+    grid-template-columns: min-content 2fr 0.9fr;
+    grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+    grid-template-areas: 
+                "Sidebar Header Realtors"
+                "Sidebar Features Features"
+                "Sidebar Story Story"
+                "Sidebar Homes Homes"
+                "Sidebar Gallery Gallery"
+                "Sidebar Footer Footer";
+
+    @media only screen and (max-width: $BP-large) {
+        grid-template-columns: 2fr 0.9fr;
+        grid-template-rows:  6rem 80vh min-content 40vw repeat(3, min-content);
+        grid-template-areas: 
+                "Sidebar Sidebar"
+                "Header Realtors"
+                "Features Features"
+                "Story Story"
+                "Homes Homes"
+                "Gallery Gallery"
+                "Footer Footer";
+    }
+
+    @media only screen and (max-width: $BP-medium) {
+        grid-template-columns: 1fr;
+        grid-template-rows:  6rem calc(100vh - 6rem) min-content min-content min-content repeat(3, min-content);
+        grid-template-areas: 
+                "Sidebar Sidebar"
+                "Header Header"
+                "Realtors Realtors"
+                "Features Features"
+                "Story Story"
+                "Homes Homes"
+                "Gallery Gallery"
+                "Footer Footer";
+    }
+}
+
+// margin Helper Classes
+.MB-Small{margin-bottom: 2rem;}
+.MB-Medium{margin-bottom: 3rem;}
+.MB-Big{margin-bottom: 4rem;}
+.MB-Large{margin-bottom: 8rem;}

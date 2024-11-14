@@ -1,0 +1,131 @@
+.Homes{
+    grid-area: Homes;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 7rem;
+
+    margin: 15rem auto;
+
+    width: 90%;
+}
+
+.Home{
+    background-color: $Light-grey-1;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 3.5rem;
+
+    position: relative;
+
+    @media only screen and (max-width: $BP-small) {
+        grid-row-gap: 1.5rem;
+    }
+
+    &-Image{
+        grid-column: 1 / -1;
+
+        width: 100%;
+    }
+
+    &-Like{
+        position: absolute;
+
+        fill: $Color-Primary;
+
+        height: 3rem;
+        width: 3rem;
+
+        top: 1rem;
+        right: 1rem;
+    }
+
+    & h5{
+        position: absolute;
+
+        grid-column: 1 / -1;
+        justify-self: center;
+
+        font-family: $Font-Display;
+        font-size: 1.6rem;
+        text-align: center;
+        color: white;
+        font-weight: 400;
+
+        background-color: $Color-Secondary;
+
+        padding: 1.25rem;
+        width: 80%;
+
+        top: 50%;
+    }
+
+    &-Location{
+        grid-column: 1;
+    }
+
+    &-Rooms{
+        grid-column: 2;
+
+    }
+
+    &-Area{
+        grid-column: 1;
+    }
+
+    &-Price{
+        grid-column: 2;
+    }
+
+    &-Location,
+    &-Rooms{
+        margin-top: 2.5rem;
+    }
+
+    &-Location,
+    &-Rooms,
+    &-Area,
+    &-Price{
+        margin-left: 2rem;
+
+        font-size: 1.5rem;
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        svg{
+
+        fill: $Color-Primary;
+        
+        height: 2rem;
+        width: 2rem;
+
+        }
+    }
+
+    &-BTN{
+        grid-column: 1 / -1;
+    }
+
+    @media only screen and (max-width: $BP-large) {
+        & h5{
+            font-size: 1.4rem;
+            top: 45%
+        }
+    }
+
+    @media only screen and (max-width: $BP-medium) {
+        & h5{
+            top:50%;
+        }
+    }
+
+    // @media only screen and (max-width: $BP-medium) {
+    //     & h5{
+    //         top: 21rem;
+    //     }
+    // }
+
+}

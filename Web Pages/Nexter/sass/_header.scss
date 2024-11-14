@@ -1,0 +1,79 @@
+.Header{
+    grid-area: Header;
+
+    background-color: $Dark-Grey-1;
+
+    background-image: linear-gradient(rgba($Color-Secondary, 0.93), rgba($Color-Secondary, 0.93)), url(../Content/img/hero.jpeg);
+    background-size: cover;
+    background-position: center;
+    
+    padding: 8rem;
+    padding-top: 4rem;
+
+    display: grid;
+    grid-template-columns: minmax(min-content, max-content);
+    grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+    row-gap: 1.5rem;
+    justify-content: start;
+
+    & button{
+        align-self: start;
+        justify-self: start;
+    }
+
+    @media only screen and (max-width: $BP-small) {
+        padding: 5rem;
+    }
+
+
+}
+
+.Logo{
+    height: 3rem;
+
+    justify-self: center;
+}
+
+.SeenOn{
+
+    &-Text{
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        align-items: center;
+        gap: 1.5rem;
+
+        font-size: 1.6rem;
+        color: $Light-grey-2;
+
+        margin-bottom: 1rem;
+
+        &::before,
+        &::after{
+            content: "";
+
+            height: 1px;
+
+            display: block;
+
+            background-color: currentColor;
+        }
+
+    }
+
+    &-Logos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+        justify-items: center;
+        align-items: center;
+        max-height: 2.5rem;
+        max-width: 100%;
+
+        filter: brightness(70%);
+    }   
+
+    &-Logo{
+        height: 2.5rem;
+    }
+
+}
