@@ -8,6 +8,6 @@ This repository showcases a collection of web projects, designs, and layouts tha
 - In every folder, you will find a README file explaining the details of the project, including its purpose, features, and how to view or run it.
 
 ## Feedback and Questions
-- Feel free to report any mistakes you find.  
-- Feel free to ask any questions you have.
+- Found a mistake or bug? Feel free to open an issue or submit a pull request.
+- Got a question about a project? Don’t hesitate to ask!
 
